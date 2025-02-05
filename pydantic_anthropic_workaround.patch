@@ -1,0 +1,18 @@
+diff --git a/.conda/Lib/site-packages/pydantic/v1/temp_fields_old.py b/.conda/Lib/site-packages/pydantic/v1/fields.py
+index 60d260e..00404e6 100644
+--- a/.conda/Lib/site-packages/pydantic/v1/temp_fields_old.py
++++ b/.conda/Lib/site-packages/pydantic/v1/fields.py
+@@ -1055,6 +1055,13 @@ class ModelField(Representation):
+     ) -> 'ValidateReturn':
+         if self.sub_fields:
+             if self.discriminator_key is not None:
++                # if v is string, try to json.parse it
++                if isinstance(v, str):
++                    try:
++                        import json
++                        v = json.loads(v)
++                    except ValueError:
++                        pass
+                 return self._validate_discriminated_union(v, values, loc, cls)
+ 
+             errors = []
