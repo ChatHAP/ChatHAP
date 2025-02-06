@@ -5,8 +5,8 @@ ChatHAP is a conversational system for designing haptic vibrations. It integrate
 ## Paper
 
 ### ChatHAP: A Chat-Based Haptic System for Designing Vibrations through Conversation (CHI2025)
-![Alt text](./figures/teaser.png)
-
+[![Click here to watch the YouTube video](./figures/thumbnail.png)](https://youtu.be/5tHNRJuSp1Q)
+[Click here to watch the YouTube video](https://youtu.be/5tHNRJuSp1Q)
 
 
 ### Implementation
