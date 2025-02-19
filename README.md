@@ -36,6 +36,9 @@ streamlit run app/main.py
 # Troubleshooting
 No currently known issues.
 
+# Dataset
+We provide a dataset (google drive) containing user conversation streams paired with their corresponding vibrations, along with user preference ratings for these pairs:
+https://drive.google.com/drive/folders/1ZJFC5kKbhx-Qd52PGNB9h6jlmzJneotz?usp=sharing
 
 # Publication
 Please cite this paper if you use this ChatHAP repository in your research.
